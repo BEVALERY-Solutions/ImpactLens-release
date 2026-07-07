@@ -8,15 +8,15 @@ inside the editor workspace.
 
 ## Download
 
-Download the VSIX package:
+Download the latest VSIX package from GitHub Releases:
 
-```text
-releases/impactlens-vscode-0.1.0.vsix
-```
+https://github.com/BEVALERY-Solutions/impactlens-release/releases/latest
+
+Use the asset named `impactlens-vscode-0.1.0.vsix`.
 
 ## Install in VS Code
 
-1. Download `releases/impactlens-vscode-0.1.0.vsix`.
+1. Download `impactlens-vscode-0.1.0.vsix` from the latest release.
 2. Open VS Code.
 3. Open the Extensions view.
 4. Click `...`.
@@ -26,12 +26,12 @@ releases/impactlens-vscode-0.1.0.vsix
 Or install from a terminal:
 
 ```powershell
-code --install-extension .\releases\impactlens-vscode-0.1.0.vsix --force
+code --install-extension .\impactlens-vscode-0.1.0.vsix --force
 ```
 
 ## Install in Kodik
 
-1. Download `releases/impactlens-vscode-0.1.0.vsix`.
+1. Download `impactlens-vscode-0.1.0.vsix` from the latest release.
 2. Open Kodik.
 3. Open the Extensions view.
 4. Choose `Install from VSIX...`.
@@ -40,7 +40,7 @@ code --install-extension .\releases\impactlens-vscode-0.1.0.vsix --force
 If the `kodik` command is available in your terminal:
 
 ```powershell
-kodik --install-extension .\releases\impactlens-vscode-0.1.0.vsix --force
+kodik --install-extension .\impactlens-vscode-0.1.0.vsix --force
 ```
 
 ## Usage
