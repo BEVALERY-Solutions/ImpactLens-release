@@ -46,12 +46,25 @@ kodik --install-extension .\impactlens-vscode-0.1.0.vsix --force
 ## Usage
 
 1. Open a source code workspace in VS Code or Kodik.
-2. Open the ImpactLens icon in the Activity Bar.
+2. Run `ImpactLens: Getting Started`.
 3. Run `ImpactLens: Check Setup`.
 4. Use `Current Changes` to analyze local Git changes.
 5. Use `Pull Requests` to inspect and analyze available PRs.
 6. Review affected files, routes, code symbols, suggested tests, risk, and
    optional AI suggestions.
+
+## Quick Demo Path
+
+If you want to evaluate ImpactLens without preparing a repository:
+
+1. Install the VSIX.
+2. Run `ImpactLens: Getting Started`.
+3. Click `Open demo report`, or run `ImpactLens: Open Demo Report`.
+4. Review `Impact summary`, `Review gate`, `Review focus`, `Performance`,
+   affected routes, affected symbols, suggested tests, and AI actions.
+
+This demo report uses built-in static analysis facts and does not require
+GitHub authentication, Python setup, or an external AI provider.
 
 ## Notes
 
@@ -61,3 +74,10 @@ kodik --install-extension .\impactlens-vscode-0.1.0.vsix --force
   extension settings.
 - The extension analyzes the current workspace locally and does not require a
   hosted backend.
+
+## Known Limitations
+
+- Non-Python language support is intentionally MVP-level.
+- Pull request listing depends on VS Code GitHub authentication or GitHub CLI.
+- Large workspaces may need lower analysis depth or exclude patterns.
+- AI output is explanatory only; core impact analysis is static and local.
